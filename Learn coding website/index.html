@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <img src="images/logo.png" alt="" class="logo">
+            <h1>Learn Coding</h1>
+        </div>
+        <ul class="nav">
+            <li class="mobile"><a href="#">Home</a></li>
+            <li class="mobile"><a href="#">About</a></li>
+            <li class="mobile"><a href="#">Contact Us</a></li>
+            <li class="mobile"><a href="#">Services</a></li>
+            <li onclick="shownav()" id="menu-btn"><a href="#"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 -960 960 960" width="24">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+        <ul class="hide">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">Contact Us</a></li>
+            <li> <a href="#">Services</a></li>
+            <li onclick="closenav()" id="close-btn"> <a href="#"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <img src="images/bg-img.png" alt="" class="bg">
+        <div class="hero-1">
+            <span class="first">Let's Learn Together</span>
+            <span class="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestiae odio, impedit, architecto molestias cupiditate beatae, minus minima doloribus similique accusantium numquam tenetur.
+            </span>
+            <form action="">
+                <input type="text" placeholder="Enter Your Email">
+                <label for="">Subscribe</label>
+            </form>
+        </div>
+    </section>
+
+    <section class="hero-2">
+        <div class="left-1">
+            <p>
+                <span class="big-txt">
+                    Lorem ipsum dolor sit.
+                </span>
+                <span class="small-txt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ratione natus tempore laborum culpa aliquam, maiores, possimus voluptates illum porro excepturi non in sint vero, ipsa quis id sunt! Non ad quia totam molestias asperiores vitae incidunt inventore dolores praesentium? Mollitia, nihil iusto! Ad, nam.
+                </span>
+            </p>
+        </div>
+        <div class="right-1">
+            <img src="images/first-img.jpg" alt="">
+        </div>
+    </section>
+    <section class="hero-3">
+        <div class="left-1">
+            <p>
+                <span class="big-txt">
+                    Lorem ipsum dolor sit.
+                </span>
+                <span class="small-txt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ratione natus tempore laborum culpa aliquam, maiores, possimus voluptates illum porro excepturi non in sint vero, ipsa quis id sunt! Non ad quia totam molestias asperiores vitae incidunt inventore dolores praesentium? Mollitia, nihil iusto! Ad, nam.
+                </span>
+            </p>
+        </div>
+        <div class="right-1">
+            <img src="images/second-img.jpg" alt="">
+        </div>
+    </section>
+
+    <footer>
+        COPYRIGHT &copy; All Rights Reserved 2023 .
+    </footer>
+    <script>
+        function shownav(){
+            var show = document.querySelector('.hide')
+            show.style.display = 'flex'
+        }
+        function closenav(){
+            var hide = document.querySelector('.hide')
+            hide.style.display = "none"
+        }
+    </script>
+</body>
+
+</html>
