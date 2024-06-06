@@ -1,4 +1,6 @@
 <h1>Projects From Basic to Advance Web Development :</h1>
-1. Background Color Changer .
-2. Instagram Login Form Page .
-3. Learn Coding Website .
+<ol>
+<li>Background Color Changer .</li>
+<li>Instagram Login Form Page .</li>
+<li>Learn Coding Website .</li>
+</ol>
